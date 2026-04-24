@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上城区政协委员通</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #8B0000;
+            --color-primary-dark: #5C0000;
+            --color-primary-light: #B22222;
+            --color-gold: #C9A227;
+            --color-gold-light: #E8D48A;
+            --color-gold-dark: #8B7355;
+            --color-cream: #FDF8F0;
+            --color-cream-dark: #F5EBD9;
+            --color-text: #2D2D2D;
+            --color-text-light: #5A5A5A;
+            --color-white: #FFFFFF;
+            --shadow-sm: 0 2px 8px rgba(139, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(139, 0, 0, 0.12);
+            --shadow-lg: 0 8px 32px rgba(139, 0, 0, 0.16);
+            --shadow-xl: 0 16px 48px rgba(139, 0, 0, 0.2);
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', 'Noto Serif SC', serif;
+            background: var(--color-cream);
+            color: var(--color-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Decorative Background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 10% 20%, rgba(139, 0, 0, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 90% 80%, rgba(201, 162, 39, 0.05) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            padding: 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow-md);
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold));
+        }
+
+        .header-top {
+            background: linear-gradient(90deg, var(--color-gold-dark), var(--color-gold), var(--color-gold-dark));
+            padding: 8px 0;
+            text-align: center;
+        }
+
+        .header-top-text {
+            color: var(--color-primary-dark);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .header-main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .logo-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            color: var(--color-primary);
+            font-weight: bold;
+            box-shadow: 0 4px 20px rgba(201, 162, 39, 0.4);
+            border: 3px solid var(--color-white);
+        }
+
+        .logo-text {
+            color: var(--color-white);
+        }
+
+        .logo-text h1 {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 6px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(135deg, #fff 0%, var(--color-gold-light) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-text p {
+            font-size: 12px;
+            opacity: 0.9;
+            letter-spacing: 3px;
+            font-weight: 300;
+        }
+
+        .nav {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .nav-item {
+            padding: 10px 18px;
+            color: var(--color-white);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: 0.5s;
+        }
+
+        .nav-item:hover::before {
+            left: 100%;
+        }
+
+        .nav-item:hover, .nav-item.active {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-2px);
+        }
+
+        .nav-item.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 24px;
+            height: 3px;
+            background: var(--color-gold);
+            border-radius: 2px;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 50%, #4A0000 100%);
+            overflow: hidden;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+        }
+
+        .hero-bg img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.3;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(139, 0, 0, 0.85) 0%, rgba(92, 0, 0, 0.9) 50%, rgba(74, 0, 0, 0.95) 100%);
+            z-index: 1;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C9A227' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
+            z-index: 2;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'%3E%3Cpath fill='%23FDF8F0' d='M0,40 L0,80 L1440,80 L1440,40 C1440,40 1080,80 720,80 C360,80 0,40 0,40 Z'/%3E%3C/svg%3E");
+            background-size: cover;
+            z-index: 3;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 100px 40px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 52px;
+            color: var(--color-white);
+            margin-bottom: 24px;
+            letter-spacing: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--color-gold-light);
+            line-height: 1.8;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+            position: relative;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -40px;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .stat-item:first-child::before {
+            display: none;
+        }
+
+        .stat-number {
+            font-size: 56px;
+            font-weight: 700;
+            color: var(--color-gold);
+            display: block;
+            text-shadow: 0 2px 20px rgba(201, 162, 39, 0.5);
+        }
+
+        .stat-label {
+            font-size: 16px;
+            color: var(--color-white);
+            opacity: 0.9;
+            margin-top: 8px;
+        }
+
+        /* Main Content */
+        .main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 80px 40px;
+        }
+
+        .section {
+            margin-bottom: 100px;
+            scroll-margin-top: 120px;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 40px;
+            color: var(--color-primary);
+            margin-bottom: 16px;
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+        }
+
+        .section-title::before {
+            content: '◆';
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-gold);
+            font-size: 12px;
+        }
+
+        .section-title::after {
+            content: '◆';
+            position: absolute;
+            right: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--color-gold);
+            font-size: 12px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--color-text-light);
+            margin-top: 16px;
+        }
+
+        /* Cards Grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        .card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: 36px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 1px solid var(--color-cream-dark);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-gold));
+        }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: radial-gradient(circle, rgba(201, 162, 39, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 24px;
+            color: var(--color-white);
+            box-shadow: 0 8px 24px rgba(139, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            font-size: 22px;
+            color: var(--color-text);
+            margin-bottom: 14px;
+            font-weight: 600;
+        }
+
+        .card p {
+            font-size: 15px;
+            color: var(--color-text-light);
+            line-height: 1.8;
+        }
+
+        .card-meta {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid var(--color-cream-dark);
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: var(--color-text-light);
+        }
+
+        /* Street Grid */
+        .street-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .street-item {
+            background: var(--color-white);
+            border-radius: var(--radius-lg);
+            padding: 28px 24px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .street-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-primary), var(--color-gold));
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .street-item:hover {
+            border-color: var(--color-gold);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .street-item:hover::before {
+            transform: scaleX(1);
+        }
+
+        .street-item .number {
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--color-primary);
+            opacity: 0.15;
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            font-family: 'Noto Serif SC', serif;
+        }
+
+        .street-item {
+            position: relative;
+        }
+
+        .street-item h4 {
+            font-size: 19px;
+            color: var(--color-text);
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .street-item p {
+            font-size: 13px;
+            color: var(--color-text-light);
+        }
+
+        /* Circle List */
+        .circle-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .circle-item {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white);
+            text-align: center;
+            padding: 20px;
+            transition: var(--transition);
+            cursor: pointer;
+            box-shadow: 0 8px 32px rgba(139, 0, 0, 0.3);
+            position: relative;
+        }
+
+        .circle-item::before {
+            content: '';
+            position: absolute;
+            inset: -3px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light), var(--color-gold));
+            z-index: -1;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .circle-item:hover {
+            transform: scale(1.1) translateY(-8px);
+            box-shadow: 0 16px 48px rgba(139, 0, 0, 0.4);
+        }
+
+        .circle-item:hover::before {
+            opacity: 1;
+        }
+
+        .circle-item .num {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-bottom: 6px;
+        }
+
+        .circle-item .name {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        /* Gallery - Masonry Style */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 280px;
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .gallery-item {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            position: relative;
+            background: var(--color-cream-dark);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-lg);
+            z-index: 10;
+        }
+
+        .gallery-item.large {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+
+        .gallery-item.wide {
+            grid-column: span 2;
+            grid-row: span 1;
+        }
+
+        .gallery-item.tall {
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 30px 24px;
+            background: linear-gradient(transparent, rgba(139, 0, 0, 0.9));
+            color: var(--color-white);
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .overlay {
+            transform: translateY(0);
+        }
+
+        .gallery-item .overlay h4 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .gallery-item .overlay p {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        /* Studio List */
+        .studio-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 24px;
+        }
+
+        .studio-card {
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            padding: 28px;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-left: 5px solid var(--color-primary);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .studio-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(139, 0, 0, 0.05) 0%, transparent 70%);
+        }
+
+        .studio-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateX(8px);
+        }
+
+        .studio-card .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+
+        .studio-card h4 {
+            font-size: 18px;
+            color: var(--color-text);
+            flex: 1;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .studio-card .badge {
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            color: var(--color-primary-dark);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(201, 162, 39, 0.3);
+        }
+
+        .studio-card .info {
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+            color: var(--color-text-light);
+            flex-wrap: wrap;
+        }
+
+        .studio-card .info span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Star Rating */
+        .star-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .star-card {
+            background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-white) 100%);
+            border-radius: var(--radius-xl);
+            padding: 36px;
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            border: 2px solid var(--color-gold);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .star-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(201, 162, 39, 0.1) 0%, transparent 50%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .star-card .stars {
+            color: var(--color-gold);
+            font-size: 32px;
+            margin-bottom: 20px;
+            position: relative;
+            text-shadow: 0 2px 10px rgba(201, 162, 39, 0.5);
+        }
+
+        .star-card h4 {
+            font-size: 20px;
+            color: var(--color-text);
+            margin-bottom: 10px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .star-card p {
+            font-size: 14px;
+            color: var(--color-text-light);
+            position: relative;
+        }
+
+        /* Plan Table */
+        .plan-table {
+            width: 100%;
+            background: var(--color-white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .plan-table th, .plan-table td {
+            padding: 18px 24px;
+            text-align: left;
+            border-bottom: 1px solid var(--color-cream-dark);
+        }
+
+        .plan-table th {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+            color: var(--color-white);
+            font-weight: 600;
+            font-size: 15px;
+            position: relative;
+        }
+
+        .plan-table th::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--color-gold);
+        }
+
+        .plan-table tr {
+            transition: var(--transition);
+        }
+
+        .plan-table tr:hover {
+            background: linear-gradient(90deg, var(--color-cream), var(--color-white));
+        }
+
+        .plan-table tr:hover td {
+            color: var(--color-primary);
+        }
+
+        .plan-table td {
+            font-size: 14px;
+            color: var(--color-text);
+        }
+
+        /* Footer */
+        .footer {
+            background: linear-gradient(135deg, var(--color-primary-dark) 0%, #3D0000 100%);
+            color: var(--color-white);
+            padding: 80px 40px 30px;
+            margin-top: 80px;
+            position: relative;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold));
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 48px;
+        }
+
+        .footer-section h4 {
+            font-size: 20px;
+            margin-bottom: 24px;
+            color: var(--color-gold);
+            font-weight: 600;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .footer-section h4::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--color-gold);
+        }
+
+        .footer-section p, .footer-section li {
+            font-size: 14px;
+            line-height: 1.9;
+            opacity: 0.9;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .footer-section li:hover {
+            padding-left: 28px;
+        }
+
+        .footer-section li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: var(--color-gold);
+            font-size: 8px;
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 50px auto 0;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Back to Top */
+        .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, var(--color-gold), var(--color-gold-light));
+            color: var(--color-primary-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(201, 162, 39, 0.4);
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 999;
+            border: 3px solid var(--color-white);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-8px) scale(1.1);
+            box-shadow: 0 12px 32px rgba(201, 162, 39, 0.5);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-white);
+            font-size: 28px;
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 260px;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .header-main {
+                padding: 16px 24px;
+            }
+            
+            .nav {
+                display: none;
+            }
+            
+            .nav.active {
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--color-primary-dark);
+                padding: 20px;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero h2 {
+                font-size: 36px;
+                letter-spacing: 4px;
+            }
+            
+            .hero-stats {
+                flex-wrap: wrap;
+                gap: 40px;
+            }
+
+            .stat-item::before {
+                display: none;
+            }
+            
+            .main {
+                padding: 50px 24px;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                grid-auto-rows: 220px;
+            }
+
+            .gallery-item.large,
+            .gallery-item.wide {
+                grid-column: span 2;
+            }
+
+            .gallery-item.large {
+                grid-row: span 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo-text h1 {
+                font-size: 22px;
+                letter-spacing: 2px;
+            }
+
+            .logo-text p {
+                display: none;
+            }
+
+            .logo-icon {
+                width: 52px;
+                height: 52px;
+                font-size: 26px;
+            }
+            
+            .section-title {
+                font-size: 30px;
+            }
+
+            .section-title::before,
+            .section-title::after {
+                display: none;
+            }
+
+            .cards-grid, .studio-list, .star-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .circle-list {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .circle-item {
+                width: 100%;
+                max-width: 280px;
+                height: auto;
+                min-height: 100px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+                grid-auto-rows: 260px;
+            }
+
+            .gallery-item.large,
+            .gallery-item.wide {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+
+            .hero-stats {
+                gap: 30px;
+            }
+
+            .stat-number {
+                font-size: 42px;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .animate-in {
+            animation: fadeInUp 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-in-left {
+            animation: fadeInLeft 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .animate-in-right {
+            animation: fadeInRight 0.6s ease forwards;
+            opacity: 0;
+        }
+
+        .delay-1 { animation-delay: 0.1s; }
+        .delay-2 { animation-delay: 0.2s; }
+        .delay-3 { animation-delay: 0.3s; }
+        .delay-4 { animation-delay: 0.4s; }
+        .delay-5 { animation-delay: 0.5s; }
+        .delay-6 { animation-delay: 0.6s; }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <span class="header-top-text">杭州市上城区政协</span>
+        </div>
+        <div class="header-main">
+            <div class="logo">
+                <div class="logo-icon">政</div>
+                <div class="logo-text">
+                    <h1>政协委员通</h1>
+                    <p>CHINESE PEOPLE'S POLITICAL CONSULTATIVE CONFERENCE</p>
+                </div>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <nav class="nav" id="nav">
+                <a href="#home" class="nav-item active">首页</a>
+                <a href="#committee" class="nav-item">委员之家</a>
+                <a href="#streets" class="nav-item">街道小组</a>
+                <a href="#circles" class="nav-item">界别概况</a>
+                <a href="#practice" class="nav-item">协商实践</a>
+                <a href="#platform" class="nav-item">履职平台</a>
+                <a href="#stars" class="nav-item">星级工作室</a>
+                <a href="#plans" class="nav-item">履职计划</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="./4. 市政协新时代协商民主实践 - 上城分中心/分中心/彭埠1-市政协新时代协商民主实践中心矩阵建设座谈会在实践中心上城区分中心召开，市政协毛溪浩副主席参加.webp" alt="政协活动" onerror="this.style.display='none'">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>上城区政协委员通</h2>
+            <p>坚持党建引领，强化委员工作室"三位一体"建设，打造"一室一品"特色，深化"楼宇商圈""宋韵文化"和"全龄特有爱"公益慈善品牌建设</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50</span>
+                    <span class="stat-label">委员工作室</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">14</span>
+                    <span class="stat-label">街道全覆盖</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">16</span>
+                    <span class="stat-label">界别组织</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25</span>
+                    <span class="stat-label">五星级工作室</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- 委员之家 -->
+        <section class="section" id="committee">
+            <div class="section-header">
+                <h2 class="section-title">委员之家</h2>
+                <p class="section-subtitle">政协委员的温馨家园</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card animate-in delay-1">
+                    <div class="card-icon">🏠</div>
+                    <h3>委员之家简介</h3>
+                    <p>上城区政协按照"向基层延伸覆盖"和"不建机构建机制"工作要求，坚持党建引领，强化委员工作室建设，为委员履职提供平台支撑。</p>
+                </div>
+                <div class="card animate-in delay-2">
+                    <div class="card-icon">📋</div>
+                    <h3>组织架构</h3>
+                    <p>构建"区政协-街道委员小组-界别-委员工作室"四级组织体系，实现履职平台全覆盖。</p>
+                </div>
+                <div class="card animate-in delay-3">
+                    <div class="card-icon">🎯</div>
+                    <h3>主要职能</h3>
+                    <p>政治协商、民主监督、参政议政，密切联系界别群众，凝聚社会各界共识，助推区域经济高质量发展。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 街道委员小组 -->
+        <section class="section" id="streets">
+            <div class="section-header">
+                <h2 class="section-title">街道委员小组</h2>
+                <p class="section-subtitle">14个街道委员小组全覆盖</p>
+            </div>
+            <div class="street-grid">
+                <div class="street-item">
+                    <span class="number">01</span>
+                    <h4>湖滨街道</h4>
+                    <p>湖滨小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">02</span>
+                    <h4>清波街道</h4>
+                    <p>清波小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">03</span>
+                    <h4>小营街道</h4>
+                    <p>小营小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">04</span>
+                    <h4>望江街道</h4>
+                    <p>望江小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">05</span>
+                    <h4>南星街道</h4>
+                    <p>南星小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">06</span>
+                    <h4>紫阳街道</h4>
+                    <p>三一委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">07</span>
+                    <h4>闸弄口街道</h4>
+                    <p>基层治理委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">08</span>
+                    <h4>凯旋街道</h4>
+                    <p>凯旋小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">09</span>
+                    <h4>采荷街道</h4>
+                    <p>幸福19委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">10</span>
+                    <h4>四季青街道</h4>
+                    <p>四季青小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">11</span>
+                    <h4>笕桥街道</h4>
+                    <p>笕桥小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">12</span>
+                    <h4>彭埠街道</h4>
+                    <p>彭埠小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">13</span>
+                    <h4>九堡街道</h4>
+                    <p>九堡小组委员工作室</p>
+                </div>
+                <div class="street-item">
+                    <span class="number">14</span>
+                    <h4>丁兰街道</h4>
+                    <p>丁兰小组委员工作室</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 界别基本情况 -->
+        <section class="section" id="circles">
+            <div class="section-header">
+                <h2 class="section-title">界别基本情况</h2>
+                <p class="section-subtitle">16个界别组织概况</p>
+            </div>
+            <div class="circle-list">
+                <div class="circle-item">
+                    <span class="num">界别一</span>
+                    <span class="name">中共</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别二</span>
+                    <span class="name">无党派</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别三</span>
+                    <span class="name">共青团、青联</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别四</span>
+                    <span class="name">工会</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别五</span>
+                    <span class="name">妇联</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别六</span>
+                    <span class="name">工商联</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别七</span>
+                    <span class="name">科技、科协</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别八</span>
+                    <span class="name">侨、台</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别九</span>
+                    <span class="name">新闻文体</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别十</span>
+                    <span class="name">经济</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别十一</span>
+                    <span class="name">环境资源和农业</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别十二</span>
+                    <span class="name">教育</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别十三</span>
+                    <span class="name">医卫</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别十四</span>
+                    <span class="name">社会福利和保障</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别十五</span>
+                    <span class="name">民宗</span>
+                </div>
+                <div class="circle-item">
+                    <span class="num">界别十六</span>
+                    <span class="name">特邀</span>
+                </div>
+            </div>
+            <h3 style="margin: 50px 0 24px; color: var(--color-primary); font-size: 22px;">各界别活动剪影</h3>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./3. 界别基本情况/活动照片/1中共/2022.12.06 中共界别委员交流活动.webp" alt="中共界别活动" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>中共界别</h4>
+                        <p>委员交流活动</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./3. 界别基本情况/活动照片/1中共/2024.02.02 区政协一届三次会议中共界别小组讨论会.webp" alt="中共界别讨论会" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>中共界别</h4>
+                        <p>小组讨论会</p>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="./3. 界别基本情况/活动照片/4工会/5月25日2024年上城区职工毅行大会.webp" alt="职工毅行大会" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>工会界别</h4>
+                        <p>职工毅行大会</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./3. 界别基本情况/活动照片/4工会/2024年5月6日 上工大讲堂.webp" alt="上工大讲堂" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>工会界别</h4>
+                        <p>上工大讲堂</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./3. 界别基本情况/活动照片/8侨、台/WechatIMG31.webp" alt="侨台界别活动" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>侨台界别</h4>
+                        <p>交流活动</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./3. 界别基本情况/活动照片/9新闻文体/2023年8月，参观亚运会博物馆.webp" alt="参观亚运会博物馆" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>新闻文体界别</h4>
+                        <p>参观亚运会博物馆</p>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="./3. 界别基本情况/活动照片/16特邀/现场调研湖滨步行街营商环境提升项目.webp" alt="现场调研" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>特邀界别</h4>
+                        <p>现场调研湖滨步行街</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./3. 界别基本情况/活动照片/16特邀/开展读书会.webp" alt="读书会" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>特邀界别</h4>
+                        <p>读书分享会</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 市政协新时代协商民主实践 -->
+        <section class="section" id="practice">
+            <div class="section-header">
+                <h2 class="section-title">市政协新时代协商民主实践</h2>
+                <p class="section-subtitle">上城区分中心</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🏛️</div>
+                    <h3>分中心简介</h3>
+                    <p>杭州市政协新时代协商民主实践中心上城区分中心，围绕中心工作，开展各类协商活动，助推基层治理现代化。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📍</div>
+                    <h3>实践站点</h3>
+                    <p>设有彭埠、湖滨、清波、小营、望江、南星、紫阳等多个街道实践分中心，实现多点覆盖。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>民生议事堂</h3>
+                    <p>开展"圆梦安居，助力街道回迁安置"、"助推商圈社区建设"等专题协商活动。</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📚</div>
+                    <h3>读书分享会</h3>
+                    <p>举办"赓续历史之文脉，建言服务为民生"冬季读书会及专题协商会。</p>
+                </div>
+            </div>
+            <h3 style="margin: 40px 0 20px; color: var(--color-primary); font-size: 22px;">活动剪影</h3>
+            <div class="gallery">
+                <div class="gallery-item large">
+                    <img src="./4. 市政协新时代协商民主实践 - 上城分中心/分中心/彭埠1-市政协新时代协商民主实践中心矩阵建设座谈会在实践中心上城区分中心召开，市政协毛溪浩副主席参加.webp" alt="矩阵建设座谈会" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, #8B0000, #B22222)';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:white;font-size:14px;text-align:center;padding:20px;\'>市政协毛溪浩副主席参加<br>矩阵建设座谈会</div>'">
+                    <div class="overlay">
+                        <h4>矩阵建设座谈会</h4>
+                        <p>市政协领导调研指导</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./4. 市政协新时代协商民主实践 - 上城分中心/分中心/彭埠2-市区街三级政协党建联建工作会议在彭埠分中心召开.webp" alt="党建联建工作会议" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, #C9A227, #E8D48A)';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:#5C0000;font-size:14px;text-align:center;padding:20px;\'>党建联建工作会议<br>市区街三级联动</div>'">
+                    <div class="overlay">
+                        <h4>党建联建工作会议</h4>
+                        <p>三级政协协同</p>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="./4. 市政协新时代协商民主实践 - 上城分中心/分中心/彭埠4-彭埠街道委员小组开展非遗体验活动.webp" alt="非遗体验活动" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg, #1E3A5F, #2E5A8F)';this.parentElement.innerHTML='<div style=\'display:flex;align-items:center;justify-content:center;height:100%;color:white;font-size:14px;text-align:center;padding:20px;\'>非遗体验活动<br>传统文化传承</div>'">
+                    <div class="overlay">
+                        <h4>非遗体验活动</h4>
+                        <p>传承优秀传统文化</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./4. 市政协新时代协商民主实践 - 上城分中心/分中心/紫阳1-区政协孙国方主席赴紫阳分中心调研.webp" alt="区政协主席调研" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>区政协主席调研</h4>
+                        <p>孙国方主席赴紫阳分中心</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 委员履职平台 -->
+        <section class="section" id="platform">
+            <div class="section-header">
+                <h2 class="section-title">委员履职平台</h2>
+                <p class="section-subtitle">50个政协委员工作室</p>
+            </div>
+            <div class="studio-list">
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协湖滨小组委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：查靖</span>
+                        <span>📍 上城区羊血弄10号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协清波小组委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：徐洁</span>
+                        <span>📍 上城区清波街道蔡官巷35号三楼</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协小营小组委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：冷晓辉</span>
+                        <span>📍 杭州市上城区建国南路98号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协望江小组委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：毛静波</span>
+                        <span>📍 上城区翡翠海岸1幢6号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协南星小组委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：游广敏</span>
+                        <span>📍 上城区目术塘创意园2号楼7楼</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>紫阳街道"三一"委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：王盈</span>
+                        <span>📍 上城区金钗袋巷79号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>闸弄口街道"基层治理"委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：祝文雅</span>
+                        <span>📍 上城区闸弄口街道党群服务中心</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协凯旋小组委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：金志伟</span>
+                        <span>📍 上城区凤起东路127号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>采荷街道"幸福19"委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：赵丹晨</span>
+                        <span>📍 上城区采荷街道洁莲社区</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协四季青小组委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：李岗</span>
+                        <span>📍 上城区民心路280号平安金融中心B座3楼</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协笕桥小组委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：阮骏</span>
+                        <span>📍 上城区笕桥街道政协会议室</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协彭埠小组委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：任渊</span>
+                        <span>📍 上城区S2杭甬高速附近罗家老宅</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协九堡小组委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：胡建清</span>
+                        <span>📍 上城区九乔街与杭乔路交叉口</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>政协丁兰小组委员工作室</h4>
+                        <span class="badge">四星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：倪勇卿</span>
+                        <span>📍 上城区临丁路699号丁兰街道办事处5号楼4楼</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>俞富康宋韵文化委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：俞富康</span>
+                        <span>📍 上城区凯旋路151号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>爱馨文化公益委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：杨洁</span>
+                        <span>📍 上城区南山路198号（杭州书房）</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>"文润童心"委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：周媛媛</span>
+                        <span>📍 杭州市上城区清波街道府学巷8号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>"老爸好商量"委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：俞富根</span>
+                        <span>📍 上城区四宜路180号</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>大健康委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：谢慧淼</span>
+                        <span>📍 上城区凯旋路与凯林巷交叉口凯西社区</span>
+                    </div>
+                </div>
+                <div class="studio-card">
+                    <div class="header-row">
+                        <h4>全民阅读委员工作室</h4>
+                        <span class="badge">五星级</span>
+                    </div>
+                    <div class="info">
+                        <span>👤 负责人：赵群伟</span>
+                        <span>📍 上城区中山中路6号</span>
+                    </div>
+                </div>
+            </div>
+            <h3 style="margin: 50px 0 24px; color: var(--color-primary); font-size: 22px;">委员工作室活动风采</h3>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="./5. 委员履职平台/1-政协湖滨小组委员工作室-学习考察新质生产力一-万事利科创中心.webp" alt="湖滨委员工作室" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>政协湖滨小组委员工作室</h4>
+                        <p>学习考察新质生产力</p>
+                    </div>
+                </div>
+                <div class="gallery-item wide">
+                    <img src="./5. 委员履职平台/2-政协清波小组委员工作室-幸福清波，文化送福，联动中国美院为清波派出所、禁毒所、清波居民送新年祝福.webp" alt="清波委员工作室" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>政协清波小组委员工作室</h4>
+                        <p>幸福清波，文化送福</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="./5. 委员履职平台/6-政协彭埠小组委员工作室-邀请非遗传承人开展非遗制作体验活动.webp" alt="彭埠委员工作室" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>政协彭埠小组委员工作室</h4>
+                        <p>非遗制作体验活动</p>
+                    </div>
+                </div>
+                <div class="gallery-item large">
+                    <img src="./5. 委员履职平台/16-大健康委员工作室-传承国粹，践行公益，走进社区开展健康宣教义诊活动.webp" alt="大健康委员工作室" onerror="this.style.display='none'">
+                    <div class="overlay">
+                        <h4>大健康委员工作室</h4>
+                        <p>健康宣教义诊活动</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 星级委员工作室 -->
+        <section class="section" id="stars">
+            <div class="section-header">
+                <h2 class="section-title">星级委员工作室风采</h2>
+                <p class="section-subtitle">2025年度星级评定结果</p>
+            </div>
+            <div style="text-align: center; margin-bottom: 40px; padding: 30px; background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark)); border-radius: var(--radius-lg); color: white;">
+                <div style="display: flex; justify-content: center; gap: 60px; flex-wrap: wrap;">
+                    <div>
+                        <div style="font-size: 48px; font-weight: 700; color: var(--color-gold);">25</div>
+                        <div style="font-size: 16px;">五星级工作室</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: 700; color: var(--color-gold-light);">17</div>
+                        <div style="font-size: 16px;">四星级工作室</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 48px; font-weight: 700; color: #E8D48A;">4</div>
+                        <div style="font-size: 16px;">三星级工作室</div>
+                    </div>
+                </div>
+            </div>
+            <div class="star-grid">
+                <div class="star-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>政协湖滨小组委员工作室</h4>
+                    <p>学习考察新质生产力-万事利科创中心</p>
+                </div>
+                <div class="star-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>政协清波小组委员工作室</h4>
+                    <p>幸福清波，文化送福</p>
+                </div>
+                <div class="star-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>政协紫阳"三一"委员工作室</h4>
+                    <p>践行"委员说·委员做"</p>
+                </div>
+                <div class="star-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>采荷街道"幸福19"委员工作室</h4>
+                    <p>"疗愈经济分享体验会"活动</p>
+                </div>
+                <div class="star-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>政协四季青小组委员工作室</h4>
+                    <p>"投早投小投科技"专题协商会</p>
+                </div>
+                <div class="star-card">
+                    <div class="stars">★★★★★</div>
+                    <h4>工会界别委员工作室</h4>
+                    <p>"美丽大讲堂"活动</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2026年履职计划 -->
+        <section class="section" id="plans">
+            <div class="section-header">
+                <h2 class="section-title">2026年履职计划</h2>
+                <p class="section-subtitle">各街道"民生议事堂"议事计划</p>
+            </div>
+            <div class="plan-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>街道</th>
+                            <th>议题名称</th>
+                            <th>计划时间</th>
+                            <th>牵头界别</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>湖滨街道</td>
+                            <td>商圈品质提升专题协商</td>
+                            <td>第一季度</td>
+                            <td>经济界别</td>
+                        </tr>
+                        <tr>
+                            <td>清波街道</td>
+                            <td>宋韵文化传承与保护</td>
+                            <td>第二季度</td>
+                            <td>新闻文体界别</td>
+                        </tr>
+                        <tr>
+                            <td>小营街道</td>
+                            <td>红色资源开发利用</td>
+                            <td>第三季度</td>
+                            <td>中共界别</td>
+                        </tr>
+                        <tr>
+                            <td>望江街道</td>
+                            <td>金融知识普及与防诈</td>
+                            <td>第一季度</td>
+                            <td>特邀界别</td>
+                        </tr>
+                        <tr>
+                            <td>南星街道</td>
+                            <td>历史建筑保护与利用</td>
+                            <td>第二季度</td>
+                            <td>民宗界别</td>
+                        </tr>
+                        <tr>
+                            <td>紫阳街道</td>
+                            <td>邻里食堂智能化建设</td>
+                            <td>第三季度</td>
+                            <td>无党派界别</td>
+                        </tr>
+                        <tr>
+                            <td>闸弄口街道</td>
+                            <td>基层治理创新实践</td>
+                            <td>第四季度</td>
+                            <td>特邀界别</td>
+                        </tr>
+                        <tr>
+                            <td>凯旋街道</td>
+                            <td>社区养老服务提升</td>
+                            <td>第二季度</td>
+                            <td>社会福利和保障界别</td>
+                        </tr>
+                        <tr>
+                            <td>采荷街道</td>
+                            <td>老旧小区改造提升</td>
+                            <td>第一季度</td>
+                            <td>城建环资界别</td>
+                        </tr>
+                        <tr>
+                            <td>四季青街道</td>
+                            <td>楼宇经济发展研讨</td>
+                            <td>第三季度</td>
+                            <td>经济界别</td>
+                        </tr>
+                        <tr>
+                            <td>笕桥街道</td>
+                            <td>美丽乡村建设推进</td>
+                            <td>第二季度</td>
+                            <td>农业界别</td>
+                        </tr>
+                        <tr>
+                            <td>彭埠街道</td>
+                            <td>回迁安置民生工程</td>
+                            <td>第一季度</td>
+                            <td>特邀界别</td>
+                        </tr>
+                        <tr>
+                            <td>九堡街道</td>
+                            <td>交通出行优化建议</td>
+                            <td>第三季度</td>
+                            <td>特邀界别</td>
+                        </tr>
+                        <tr>
+                            <td>丁兰街道</td>
+                            <td>乡村振兴示范创建</td>
+                            <td>第四季度</td>
+                            <td>农业界别</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>联系我们</h4>
+                <p>杭州市上城区政协</p>
+                <p>地址：浙江省杭州市上城区</p>
+                <p>电话：0571-XXXXXXX</p>
+            </div>
+            <div class="footer-section">
+                <h4>快速链接</h4>
+                <ul>
+                    <li>委员之家</li>
+                    <li>街道委员小组</li>
+                    <li>界别概况</li>
+                    <li>履职平台</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>主要功能</h4>
+                <ul>
+                    <li>委员工作室展示</li>
+                    <li>协商活动报道</li>
+                    <li>履职计划查询</li>
+                    <li>界别活动剪影</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>关于</h4>
+                <p>上城区政协坚持以人民为中心的发展思想，围绕中心、服务大局，认真履行政治协商、民主监督、参政议政职能，为建设共同富裕示范区贡献政协力量。</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 杭州市上城区政协 版权所有 | 政协委员通</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" onclick="scrollToTop()">↑</div>
+
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const nav = document.getElementById('nav');
+            nav.classList.toggle('active');
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu
+                document.getElementById('nav').classList.remove('active');
+            });
+        });
+
+        // Active Nav Highlight
+        const sections = document.querySelectorAll('.section');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === '#' + current) {
+                    item.classList.add('active');
+                }
+            });
+
+            // Back to top button
+            const backToTop = document.querySelector('.back-to-top');
+            if (scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card, .street-item, .circle-item, .studio-card, .star-card').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
